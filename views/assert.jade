@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  p You are logged in as #{username}
+  p 
+  a(class='button', href='/logout') Logout
+  p #{JSON.stringify(samlresponse)}
